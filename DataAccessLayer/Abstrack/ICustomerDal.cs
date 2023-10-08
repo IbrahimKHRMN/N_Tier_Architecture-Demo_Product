@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstrack
 {
-    public interface ICustomerDal
+    public interface ICustomerDal : IGenericDal<Customer>
     {
-        void Insert(Customer p);
-        void Update(Customer p);
-        void Delete(Customer p);
-        List<Customer> GetList();
+
     }
 }
